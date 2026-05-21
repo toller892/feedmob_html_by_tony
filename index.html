@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FeedMob</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      text-align: center;
+    }
+    .feedmob {
+      font-size: 5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #00b5ad, #60a5fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.02em;
+    }
+    .leo {
+      font-size: 2.5rem;
+      font-weight: 300;
+      color: #94a3b8;
+      margin-top: 0.5rem;
+    }
+    .time {
+      font-size: 1.25rem;
+      color: #64748b;
+      margin-top: 2rem;
+      font-variant-numeric: tabular-nums;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="feedmob">FeedMob</div>
+    <div class="leo">Leo</div>
+    <div class="time" id="time"></div>
+  </div>
+  <script>
+    const now = new Date();
+    document.getElementById('time').textContent = now.toLocaleString('zh-CN', {
+      timeZone: 'Asia/Shanghai',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false
+    });
+  </script>
+</body>
+</html>
