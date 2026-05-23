@@ -17,7 +17,7 @@ AI Agent → MCP Server (`3.15.32.167:30002`, SSE) → Backend API (`127.0.0.1:3
       "type": "sse",
       "url": "http://3.15.32.167:30002/sse",
       "headers": {
-        "Authorization": "Bearer GSzM9g31cL-lOvVn7xxyu-NGlrjT4pCDR83jtw0aUvo"
+        "Authorization": "Bearer Your token"
       }
     }
   }
@@ -50,7 +50,7 @@ AI Agent → MCP Server (`3.15.32.167:30002`, SSE) → Backend API (`127.0.0.1:3
 发布成功后，浏览器打开：
 
 ```
-http://3.15.32.167:30001/p/{owner}/{slug}?token=GSzM9g31cL-lOvVn7xxyu-NGlrjT4pCDR83jtw0aUvo
+http://3.15.32.167:30001/p/{owner}/{slug}?token=xxxx
 ```
 
 ---
@@ -60,7 +60,7 @@ http://3.15.32.167:30001/p/{owner}/{slug}?token=GSzM9g31cL-lOvVn7xxyu-NGlrjT4pCD
 ### 管理控制台（推荐）
 
 ```
-http://3.15.32.167:30001/console?token=GSzM9g31cL-lOvVn7xxyu-NGlrjT4pCDR83jtw0aUvo
+http://3.15.32.167:30001/console?token=xxxx
 ```
 
 ### 通过 MCP Tool
@@ -75,6 +75,6 @@ http://3.15.32.167:30001/console?token=GSzM9g31cL-lOvVn7xxyu-NGlrjT4pCDR83jtw0aU
 
 ## 5. 鉴权
 
-- URL 参数方式：`?token=GSzM9g31cL-lOvVn7xxyu-NGlrjT4pCDR83jtw0aUvo`
-- Header 方式：`Authorization: Bearer GSzM9g31cL-lOvVn7xxyu-NGlrjT4pCDR83jtw0aUvo`
+- URL 参数方式：`?token=xxxx`
+- Header 方式：`Authorization: Bearer xxxx`
 - `/health` 与 `/assets/*` 无需鉴权
